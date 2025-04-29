@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -105,8 +104,39 @@ nav {
 
 .hero {
     padding: 150px 0 100px;
-    background: linear-gradient(135deg, #a8e6cf 0%, #dcedc1 100%);
-    text-align: center;
+    background: linear-gradient(135deg, #ffffff 0%, #ffffff 100%);
+    text-align: left;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-image {
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    object-fit: cover;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.profile-image:hover {
+    transform: translateY(-5px);
 }
 
 .hero h1 {
@@ -335,6 +365,21 @@ footer {
     
     .hero {
         padding: 120px 0 60px;
+        text-align: center;
+    }
+
+    .hero-content {
+        flex-direction: column-reverse;
+        gap: 2rem;
+    }
+
+    .hero-image {
+        width: 100%;
+    }
+
+    .profile-image {
+        width: 250px;
+        height: 250px;
     }
 
     .hero h1 {
@@ -464,6 +509,11 @@ footer {
 
     .project {
         margin: 0 15px 1.5rem;
+    }
+
+    .profile-image {
+        width: 200px;
+        height: 200px;
     }
 }
 
