@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammed Sarfras | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">Muhammed Sarfras</div>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Hi, I'm Muhammed Sarfras</h1>
+            <h2>Full-Stack Mobile App Developer</h2>
+            <p>Specializing in Flutter, Dart and Node.js development with a passion for building scalable, high-performance applications.</p>
+            <div class="cta-buttons">
+                <a href="#contact" class="btn primary">Contact Me</a>
+                <a href="#projects" class="btn secondary">View Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Passionate Full-Stack Mobile App Developer specializing in Flutter, Dart and Node.js. Experienced in building scalable, high-performance applications with seamless user experiences. Strong problem-solving abilities and excellent communication skills, with a keen interest in technology and innovation.</p>
+            
+            <div class="education">
+                <h3>Education</h3>
+                <div class="education-item">
+                    <h4>HARIS & CO. ACADEMY</h4>
+                    <p>Full-Stack Mobile App Development</p>
+                    <p>2024-2025</p>
+                </div>
+            </div>
+
+            <div id="skills" class="skills">
+                <h3>Technical Skills</h3>
+                <ul>
+                    <li>Languages: Dart, JavaScript, C</li>
+                    <li>Frameworks & Libraries: Flutter, Node.js</li>
+                    <li>Databases: MongoDB, MySQL</li>
+                    <li>Tools & Platforms: Android Studio, VS Code, GitHub, Postman</li>
+                    <li>Version Control: Git</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>Projects</h2>
+
+            <div class="project">
+                <h3>Layali Perfume E-commerce App</h3>
+                <ul>
+                    <li>Designed an elegant and user-friendly UI to enhance product browsing</li>
+                    <li>Implemented structured product listing with clear pricing</li>
+                    <li>Developed seamless navigation experience</li>
+                    <li>Enabled Hive-based local storage for cart persistence</li>
+                </ul>
+            </div>
+
+            <div class="project">
+                <h3>Book Catalog App</h3>
+                <ul>
+                    <li>Intuitive UI for book cataloging</li>
+                    <li>MVC architecture with Provider</li>
+                    <li>Advanced search and filtering</li>
+                    <li>Modern UI/UX design</li>
+                </ul>
+            </div>
+
+            <div class="project">
+                <h3>Profile Management App</h3>
+                <ul>
+                    <li>Clean, responsive UI design</li>
+                    <li>Profile picture upload and bio editing</li>
+                    <li>Simplified user updates</li>
+                    <li>Seamless navigation</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <div class="contact-info">
+                <p>Email: <a href="mailto:Ssarfas07@gmail.com">Ssarfas07@gmail.com</a></p>
+                <p>Phone: <a href="tel:+918606551104">+91 8606551104</a></p>
+                <p>Location: Kannur, Kerala</p>
+            </div>
+            <div class="contact-form">
+                <form id="contact-form">
+                    <input type="text" placeholder="Name" required>
+                    <input type="email" placeholder="Email" required>
+                    <textarea placeholder="Message" required></textarea>
+                    <button type="submit" class="btn primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2024 Muhammed Sarfras. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        
+        document.querySelector('.hamburger').addEventListener('click', function() {
+            this.classList.toggle('active');
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', function() {
+                document.querySelector('.hamburger').classList.remove('active');
+                document.querySelector('.nav-links').classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>
